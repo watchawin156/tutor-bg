@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 16px;
+  /* Base: 1rem = 16px, Tailwind scales from here */
+}
+
+* {
+  font-family: 'Sarabun', sans-serif !important;
+}
+
+/* Prevent iOS Safari from zooming in on form focus */
+input,
+select,
+textarea {
+  font-size: 16px !important;
+}
+
+/* Custom Scrollbar for PC */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F8FAFC] text-slate-800 antialiased;
+  }
+}

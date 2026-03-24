@@ -1,0 +1,8 @@
+node_modules
+.wrangler
+.vite
+dist
+.witchboard
+.DS_Store
+*.local
+.env

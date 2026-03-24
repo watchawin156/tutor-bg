@@ -1,0 +1,8 @@
+name = "tutor-bg"
+pages_build_output_dir = "dist"
+
+# D1 Database Binding
+[[d1_databases]]
+binding = "DB"
+database_name = "tutor-bg-bd"
+database_id = "47fe984c-5cb5-45dd-a19a-28c5419e85d1"
