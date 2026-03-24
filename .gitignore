@@ -2,7 +2,7 @@ node_modules
 .wrangler
 .vite
 dist
-.witchboard
+.switchboard
 .DS_Store
 *.local
 .env

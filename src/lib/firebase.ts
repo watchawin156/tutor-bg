@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { initializeFirestore } from "firebase/firestore";
 
 // FINAL PRODUCTION FIREBASE CONFIG (tutor-bg)
 const firebaseConfig = {
@@ -15,5 +15,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
-export const db = getFirestore(app);
+export const db = initializeFirestore(app, {
+    experimentalForceLongPolling: true, // Bypass potential ERR_BLOCKED_BY_CLIENT
+});
 export const googleProvider = new GoogleAuthProvider();
